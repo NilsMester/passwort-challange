@@ -56,7 +56,7 @@ public class PasswortArrayCheck {
                 zeile++;
             }
 
-            //for-loop dosn`t work because fist index increments after the loop
+            //for-loop dosn't work because fist index increments after the loop
 
             /*for (int zeile = 0; zeile < array2D.length; zeile++) {
             array2D[zeile][0] = singlePassword;
