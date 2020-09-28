@@ -45,18 +45,23 @@ public class PasswortArrayCheck {
             String isUpperLowerValid = String.valueOf(checkIfPasswordContainsUpperLowerCase(singlePassword));
             String isNumberPresent = String.valueOf(checkIfPasswordContainsNumber(singlePassword));
 
+            array2D[i][0] = singlePassword;
+            array2D[i][1] = isLengthValid;
+            array2D[i][2] = isUpperLowerValid;
+            array2D[i][3] = isNumberPresent;
+
             //while-loop works because fist index increments in the loop
 
-            int zeile = i;
+            /*int zeile = i;
             while (zeile < passwords.length) {
                 array2D[zeile][0] = singlePassword;
                 array2D[zeile][1] = isLengthValid;
                 array2D[zeile][2] = isUpperLowerValid;
                 array2D[zeile][3] = isNumberPresent;
                 zeile++;
-            }
+            }*/
 
-            //for-loop dosn't work because fist index increments after the loop
+            //for-loop doesn't work because fist index increments after the loop
 
             /*for (int zeile = 0; zeile < array2D.length; zeile++) {
             array2D[zeile][0] = singlePassword;
